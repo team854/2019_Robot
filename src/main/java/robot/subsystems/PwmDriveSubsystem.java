@@ -1,7 +1,7 @@
 package robot.subsystems;
 
 import com.torontocodingcollective.sensors.encoder.TDioQuadEncoder;
-import com.torontocodingcollective.sensors.gyro.TAnalogGyro;
+import com.torontocodingcollective.sensors.gyro.TNavXGyro;
 import com.torontocodingcollective.speedcontroller.TPwmSpeedController;
 import com.torontocodingcollective.subsystem.TGyroDriveSubsystem;
 
@@ -63,7 +63,7 @@ public class PwmDriveSubsystem extends TGyroDriveSubsystem {
                 RobotConst.MAX_LOW_GEAR_SPEED,
                 
                 // Gyro used for this subsystem
-                new TAnalogGyro(RobotMap.GYRO_PORT, RobotMap.GYRO_ISINVERTED),
+                new TNavXGyro(RobotMap.GYRO_PORT, RobotMap.GYRO_ISINVERTED),
 
                 // Gyro PID Constants
                 RobotConst.DRIVE_GYRO_PID_KP, 

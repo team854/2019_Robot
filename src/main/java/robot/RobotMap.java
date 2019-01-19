@@ -97,7 +97,7 @@ public class RobotMap {
             LEFT_DRIVE_PWM_FOLLOWER_SPEED_CONTROLLER_TYPE     = TPwmSpeedControllerType.TALON_SRX;
             LEFT_DRIVE_PWM_MOTOR_ISINVERTED                   = TConst.NOT_INVERTED;
             LEFT_DRIVE_DIO_ENCODER_PORT1                      = 0;
-            LEFT_DRIVE_DIO_ENCODER_ISINVERTED                 = TConst.NOT_INVERTED;
+            LEFT_DRIVE_DIO_ENCODER_ISINVERTED                 = TConst.INVERTED;
 
             RIGHT_DRIVE_PWM_SPEED_CONTROLLER_ADDRESS          = 2;
             RIGHT_DRIVE_PWM_SPEED_CONTROLLER_TYPE             = TPwmSpeedControllerType.TALON_SR;
@@ -105,7 +105,7 @@ public class RobotMap {
             RIGHT_DRIVE_PWM_FOLLOWER_SPEED_CONTROLLER_TYPE    = TPwmSpeedControllerType.VICTOR_SPX;
             RIGHT_DRIVE_PWM_MOTOR_ISINVERTED                  = TConst.INVERTED;
             RIGHT_DRIVE_DIO_ENCODER_PORT1                     = 2;
-            RIGHT_DRIVE_DIO_ENCODER_ISINVERTED                = TConst.INVERTED;
+            RIGHT_DRIVE_DIO_ENCODER_ISINVERTED                = TConst.NOT_INVERTED;
 
             GYRO_PORT       = 0;
             GYRO_ISINVERTED = TConst.NOT_INVERTED;

@@ -81,7 +81,7 @@ public class CanDriveSubsystem extends TGyroDriveSubsystem {
     // ********************************************************************************************************************
     public void enableTurbo() {
         turboEnabled = true;
-        setMaxEncoderSpeed(RobotConst.MAX_HIGH_GEAR_SPEED);
+        //setMaxEncoderSpeed(RobotConst.MAX_HIGH_GEAR_SPEED);
         shifter.set(HIGH_GEAR);
     }
 

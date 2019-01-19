@@ -61,7 +61,7 @@ public class AutonomousCommand extends CommandGroup {
         if (pattern.equals(AutoSelector.PATTERN_STRAIGHT)) {
             // Go forward 2 ft
             this.addSequential(
-                    new TDriveOnHeadingDistanceCommand(250, 0, .95, 15, TConst.BRAKE_WHEN_FINISHED, 
+                    new TDriveOnHeadingDistanceCommand(250, 0, .6, 15, TConst.BRAKE_WHEN_FINISHED, 
                             Robot.oi, Robot.driveSubsystem));
         }
 

@@ -2,7 +2,7 @@ package com.torontocodingcollective.sensors.gyro;
 
 import com.kauailabs.navx.frc.AHRS;
 
-import edu.wpi.first.wpilibj.SPI.Port;
+import edu.wpi.first.wpilibj.SPI;
 
 public class TNavXGyro extends TGyro {
 
@@ -14,7 +14,7 @@ public class TNavXGyro extends TGyro {
 
     public TNavXGyro(boolean inverted) {
         super(inverted);
-        this.navXGyro = new AHRS(Port.kMXP);
+        this.navXGyro = new AHRS(SPI.Port.kMXP);
     }
 
     @Override
@@ -24,7 +24,10 @@ public class TNavXGyro extends TGyro {
 
     @Override
     public double getAngle() {
-        return super.getAngle(navXGyro.getAngle());
+        double getAngle_val = super.getAngle(navXGyro.getAngle());
+        System.out.println(getAngle_val);
+        return getAngle_val;
+        
     }
 
     @Override

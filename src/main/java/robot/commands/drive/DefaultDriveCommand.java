@@ -96,6 +96,8 @@ public class DefaultDriveCommand extends TDefaultDriveCommand {
             break;
         }
 
+        //motorSpeeds.left /= 2.0;
+        //motorSpeeds.right /= 2.0;
         driveSubsystem.setSpeed(motorSpeeds);
     }
 

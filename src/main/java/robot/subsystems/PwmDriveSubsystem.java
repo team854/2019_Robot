@@ -20,7 +20,7 @@ import robot.commands.drive.DefaultDriveCommand;
 public class PwmDriveSubsystem extends TGyroDriveSubsystem {
 
     private static final boolean LOW_GEAR     = false;
-    private static final boolean HIGH_GEAR    = true;
+    //private static final boolean HIGH_GEAR    = true;
 
     private boolean              turboEnabled = false;
 
@@ -63,7 +63,7 @@ public class PwmDriveSubsystem extends TGyroDriveSubsystem {
                 RobotConst.MAX_LOW_GEAR_SPEED,
                 
                 // Gyro used for this subsystem
-                new TNavXGyro(RobotMap.GYRO_PORT, RobotMap.GYRO_ISINVERTED),
+                new TNavXGyro(RobotMap.GYRO_ISINVERTED),
 
                 // Gyro PID Constants
                 RobotConst.DRIVE_GYRO_PID_KP, 
@@ -86,7 +86,7 @@ public class PwmDriveSubsystem extends TGyroDriveSubsystem {
     // ********************************************************************************************************************
     public void enableTurbo() {
         turboEnabled = true;
-        setMaxEncoderSpeed(RobotConst.MAX_HIGH_GEAR_SPEED);
+        //setMaxEncoderSpeed(RobotConst.MAX_HIGH_GEAR_SPEED);
     }
 
     public void disableTurbo() {
